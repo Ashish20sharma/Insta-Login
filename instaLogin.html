@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Insta</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        width: 55%;
+        height: 100%;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box .left {
+        width: 50%;
+        height: 100%;
+        /* background-color: black; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .box .left #img2 {
+        position: absolute;
+        right: 38px;
+        top: 76px;
+    }
+
+    .box .right {
+        width: 40%;
+        height: 100%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box .right .right-box {
+        width: 100%;
+        height: 54%;
+        background-color: #fff;
+        border: none;
+        border: 0.5px solid black;
+    }
+
+    .box .right .right-box .img {
+        width: 100%;
+        height: 20%;
+        /* background: gray; */
+    }
+
+    .box .right .right-box .img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .box .right .right-box .form {
+        width: 100%;
+        height: 60%;
+        /* background: green; */
+    }
+
+    .box .right .right-box .form .top {
+        width: 100%;
+        height: 106%;
+        /* background: #000; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box .right .right-box .form .top input {
+        width: 15vw;
+        height: 30px;
+        padding: 15px 5px;
+    }
+
+    .box .right .right-box .form .top button {
+        width: 15vw;
+        height: 22px;
+        padding: 20px 5px;
+        background-color: #4CB5F9;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        color: white;
+    }
+
+    .lines {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .lines .left-line {
+        /* height: 2px; */
+        width: 100px;
+        /* background-color: black; */
+        border: 0.2px solid black;
+    }
+
+    .lines .right-line {
+        /* height: 2px; */
+        width: 100px;
+        border: 0.2px solid black;
+    }
+
+    .box .right .right-box .form .bottom {
+        width: 100%;
+        height: 31%;
+        /* background-color: blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+        color: blue;
+    }
+
+    .box .right .right-box .form .bottom .facebook {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+    }
+
+    .box .right .bottom-bottom {
+        margin-top: 8px;
+        border: 0.5px solid black;
+        /* background-color: black; */
+        height: 8%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .get-app {
+        width: 100%;
+        /* background-color: black; */
+        height: 20%;
+        margin-top: 15px;
+    }
+
+    .get-app p {
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        /* padding-bottom: 10px; */
+
+    }
+
+    .get-app .store {
+        height: 50%;
+        width: 100%;
+        /* background-color: black; */
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .get-app .store img {
+        width: 8vw;
+        height: 5vh;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="left">
+                <img src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones.png?__makehaste_cache_breaker=HOgRclNOosk"
+                    alt="IMAGE">
+                <img id="img2" src="screenshot1.png" alt="img">
+            </div>
+            <div class="right">
+                <div class="right-box">
+                    <div class="img">
+                        <img src="https://assets.turbologo.com/blog/en/2019/09/19084953/instagram-logo-illustration.png"
+                            alt="img">
+                    </div>
+                    <div class="form">
+                        <div class="top">
+                            <input type="text" name="" id="" placeholder="Phone number,username or email">
+                            <input type="password" name="" id="" placeholder="Password">
+                            <button>Log in</button>
+                            <div class="lines">
+                                <div class="left-line"></div>
+                                <p>OR</p>
+                                <div class="right-line"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="div">
+                                <div class="facebook">
+                                    <i class="ri-facebook-box-fill"></i>
+                                    <h4>Log in with Facebook</h4>
+                                </div>
+                            </div>
+                            <p style="color: black;">Forget password</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-bottom">
+                    <p>Don`t have an account? <span style="color: #4CB5F9;">Sign up</span> </p>
+                </div>
+                <div class="get-app">
+                    <p>Get the app.</p>
+                    <div class="store">
+                        <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+                        <img src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
